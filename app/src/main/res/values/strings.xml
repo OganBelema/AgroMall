@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AgroMall</string>
+    <string name="fetching_farmers">Fetching farmers</string>
+    <string name="farmer_name"></string>
+    <string name="submit">Submit</string>
+    <string name="edit_farmer">Edit Farmer Data</string>
+</resources>
