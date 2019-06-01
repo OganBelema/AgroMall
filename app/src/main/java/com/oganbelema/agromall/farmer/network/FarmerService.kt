@@ -1,6 +1,6 @@
 package com.oganbelema.agromall.farmer.network
 
-import com.oganbelema.agromall.farmer.FarmerResponse
+import com.oganbelema.agromall.farmer.model.FarmerResponse
 import kotlinx.coroutines.Deferred
 import retrofit2.Response
 import retrofit2.Retrofit

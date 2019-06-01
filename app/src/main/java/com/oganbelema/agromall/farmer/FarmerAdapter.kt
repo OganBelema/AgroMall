@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.oganbelema.agromall.R
+import com.oganbelema.agromall.farmer.model.Farmer
 import com.oganbelema.agromall.network.IMAGE_URL
 import de.hdodenhof.circleimageview.CircleImageView
 

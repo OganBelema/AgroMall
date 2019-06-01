@@ -1,4 +1,4 @@
-package com.oganbelema.agromall.farmer
+package com.oganbelema.agromall.farmer.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.oganbelema.agromall.R
+import com.oganbelema.agromall.farmer.FarmerAdapter
+import com.oganbelema.agromall.farmer.viewmodel.FarmerViewModel
+import com.oganbelema.agromall.farmer.viewmodel.FarmerViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware

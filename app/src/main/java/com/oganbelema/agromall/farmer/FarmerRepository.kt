@@ -3,6 +3,8 @@ package com.oganbelema.agromall.farmer
 import android.util.Log
 import androidx.lifecycle.LiveData
 import com.oganbelema.agromall.farmer.database.FarmerDao
+import com.oganbelema.agromall.farmer.model.Farmer
+import com.oganbelema.agromall.farmer.model.FarmerResponse
 import com.oganbelema.agromall.farmer.network.FarmerNetworkDataSource
 import kotlinx.coroutines.*
 import org.jetbrains.anko.doAsync

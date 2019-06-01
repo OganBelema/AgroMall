@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.oganbelema.agromall.farmer.Farmer
+import com.oganbelema.agromall.farmer.model.Farmer
 import com.oganbelema.agromall.farmer.database.FarmerDao
 
 @Database(entities = [Farmer::class], version = 1, exportSchema = false)

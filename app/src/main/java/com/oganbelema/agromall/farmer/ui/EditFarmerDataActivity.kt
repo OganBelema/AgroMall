@@ -1,14 +1,16 @@
-package com.oganbelema.agromall.farmer
+package com.oganbelema.agromall.farmer.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.core.app.NavUtils
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.oganbelema.agromall.R
+import com.oganbelema.agromall.farmer.model.Farmer
+import com.oganbelema.agromall.farmer.viewmodel.FarmerViewModel
+import com.oganbelema.agromall.farmer.viewmodel.FarmerViewModelFactory
 import com.oganbelema.agromall.network.IMAGE_URL
 import kotlinx.android.synthetic.main.activity_edit_farmer_data.*
 import org.kodein.di.Kodein

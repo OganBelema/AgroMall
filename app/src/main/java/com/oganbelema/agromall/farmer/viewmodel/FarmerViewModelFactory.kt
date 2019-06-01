@@ -1,7 +1,8 @@
-package com.oganbelema.agromall.farmer
+package com.oganbelema.agromall.farmer.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.oganbelema.agromall.farmer.FarmerRepository
 
 class FarmerViewModelFactory(private val farmerRepository: FarmerRepository): ViewModelProvider.Factory {
 

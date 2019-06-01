@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".farmer.EditFarmerDataActivity"
-            android:parentActivityName=".farmer.FarmerListActivity"
+        <activity android:name=".farmer.ui.EditFarmerDataActivity"
+            android:parentActivityName=".farmer.ui.FarmerListActivity"
             android:label="@string/edit_farmer"/>
-        <activity android:name=".farmer.FarmerListActivity">
+        <activity android:name=".farmer.ui.FarmerListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

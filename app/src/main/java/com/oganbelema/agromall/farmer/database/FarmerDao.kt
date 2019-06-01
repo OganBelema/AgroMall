@@ -3,8 +3,7 @@ package com.oganbelema.agromall.farmer.database
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import androidx.room.OnConflictStrategy.IGNORE
-import androidx.room.OnConflictStrategy.REPLACE
-import com.oganbelema.agromall.farmer.Farmer
+import com.oganbelema.agromall.farmer.model.Farmer
 
 @Dao
 interface FarmerDao {

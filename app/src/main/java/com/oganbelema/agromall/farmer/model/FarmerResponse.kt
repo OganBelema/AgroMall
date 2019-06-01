@@ -1,4 +1,4 @@
-package com.oganbelema.agromall.farmer
+package com.oganbelema.agromall.farmer.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

@@ -2,7 +2,7 @@ package com.oganbelema.agromall.farmer.network
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.oganbelema.agromall.farmer.FarmerResponse
+import com.oganbelema.agromall.farmer.model.FarmerResponse
 import com.oganbelema.agromall.network.NetworkCallResult
 import kotlinx.coroutines.*
 import java.lang.Exception

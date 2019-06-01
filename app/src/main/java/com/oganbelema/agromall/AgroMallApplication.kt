@@ -3,7 +3,7 @@ package com.oganbelema.agromall
 import android.app.Application
 import com.oganbelema.agromall.database.AgroMallDatabase
 import com.oganbelema.agromall.farmer.FarmerRepository
-import com.oganbelema.agromall.farmer.FarmerViewModelFactory
+import com.oganbelema.agromall.farmer.viewmodel.FarmerViewModelFactory
 import com.oganbelema.agromall.farmer.network.FarmerNetworkDataSource
 import com.oganbelema.agromall.farmer.network.FarmerService
 import com.oganbelema.agromall.network.BaseRetrofit
