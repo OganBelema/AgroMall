@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.oganbelema.agromall.R
 import com.oganbelema.agromall.farmer.FarmerAdapter
+import com.oganbelema.agromall.farmer.service.SyncFarmerDataService
 import com.oganbelema.agromall.farmer.viewmodel.FarmerViewModel
 import com.oganbelema.agromall.farmer.viewmodel.FarmerViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
@@ -48,6 +49,9 @@ class FarmerListActivity : AppCompatActivity(), KodeinAware, FarmerAdapter.Liste
                 farmersRecyclerView.visibility = View.VISIBLE
             }
         })
+
+        val startSyncFarmerDataIntent = Intent(this, SyncFarmerDataService::class.java)
+        startService(startSyncFarmerDataIntent)
     }
 
     override fun onFarmerItemClicked(farmerId: String) {

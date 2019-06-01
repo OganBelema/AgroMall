@@ -1,7 +1,9 @@
 package com.oganbelema.agromall.farmer
 
 import android.util.Log
+import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.Observer
 import com.oganbelema.agromall.farmer.database.FarmerDao
 import com.oganbelema.agromall.farmer.model.Farmer
 import com.oganbelema.agromall.farmer.model.FarmerResponse
@@ -23,9 +25,8 @@ class FarmerRepository(private val farmerDao: FarmerDao,
     private val scope = CoroutineScope(coroutineContext)
 
 
-    init {
-
-        farmerNetworkDataSource.farmerNetworkCallResult.observeForever {
+    fun syncFarmerData(lifeCycleOwner: LifecycleOwner){
+        farmerNetworkDataSource.farmerNetworkCallResult.observe(lifeCycleOwner, Observer {
             if (it != null){
                 val response = it.response
 
@@ -44,7 +45,7 @@ class FarmerRepository(private val farmerDao: FarmerDao,
                     Log.e(tag, error.localizedMessage, error)
                 }
             }
-        }
+        })
     }
 
     private fun persistFetchedFarmers(fetchedFarmerResponse: FarmerResponse){
