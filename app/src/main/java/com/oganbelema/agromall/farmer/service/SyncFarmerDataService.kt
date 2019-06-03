@@ -1,5 +1,6 @@
 package com.oganbelema.agromall.farmer.service
 
+import android.content.Intent
 import androidx.lifecycle.LifecycleService
 import com.oganbelema.agromall.farmer.FarmerRepository
 import org.kodein.di.Kodein
@@ -13,9 +14,10 @@ class SyncFarmerDataService: LifecycleService(), KodeinAware {
 
     private val repository: FarmerRepository by instance()
 
-    override fun onCreate() {
-        super.onCreate()
+    override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
+        return super.onStartCommand(intent, flags, startId)
         repository.syncFarmerData(this)
+        stopSelf()
     }
 
     override fun onDestroy() {
