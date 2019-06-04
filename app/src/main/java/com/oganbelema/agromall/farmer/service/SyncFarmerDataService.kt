@@ -15,9 +15,9 @@ class SyncFarmerDataService: LifecycleService(), KodeinAware {
     private val repository: FarmerRepository by instance()
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
-        return super.onStartCommand(intent, flags, startId)
         repository.syncFarmerData(this)
         stopSelf()
+        return super.onStartCommand(intent, flags, startId)
     }
 
     override fun onDestroy() {
